@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* CSS VARIABLES */
+:root {
+  --VERY_LIGHT_BLUE: #f6f8ff;
+  --BLUE: #0079ff;
+  --BLACK: #222731;
+  --GRAY: #4b6a9b;
+  --WHITE: #ffffff;
+  --LIGHT_GRAY: #697c9a;
+  --PURPLE: #141d2f;
+  --DEEP_BLUE: #1e2a47;
+  --LIGHT_WHITE: #fefefe;
+}
+
+/* GENERAL STYLES */
+
+body {
+  background-color: var(--VERY_LIGHT_BLUE);
+  font-family: "Space Mono", monospace;
+  font-size: 16px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  border: 1px solid red;
+  width: 730px;
+}
+.title {
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 1.6rem;
+  color: var(--BLACK);
+}
+.state {
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 0.8rem;
+  letter-spacing: 2.5px;
+  color: var(--LIGHT_GRAY);
+}
+.theme {
+  border: 1px solid red;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.intro {
+  border: 1px solid blue;
+  display: flex;
+  justify-content: space-between;
+}
+.searchbox {
+  border: 1px solid red;
+}
+input {
+  width: 274px;
+  display: block;
+  border: 0;
+  background-color: transparent;
+  font-family: inherit;
+  font-size: 1.12rem;
+  outline: 0;
+}
+.search_input {
+  border: 1px solid red;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.search_btn {
+  background-color: var(--BLUE);
+  color: var(--WHITE);
+  font-family: inherit;
+  font-size: 1rem;
+  border: 0;
+  padding: 0.8rem 1.4rem;
+  border-radius: 10px;
+}
+.searchbox {
+  display: flex;
+  padding-left: 2rem;
+  padding-right: 10px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: var(--LIGHT_WHITE);
+  justify-content: space-between;
+  border-radius: 15px;
+  margin-top: 2.2rem;
+}
+.card {
+  width: 730px;
+  padding: 3rem;
+  border: 1px solid black;
+  margin-top: 1.5rem;
+}
+.user_head {
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+}
+.user_info {
+  border: 1px solid yellow;
+  width: 100%;
+}
+.card_details {
+  border: 1px solid blue;
+  display: flex;
+  align-items: center;
+  gap: 2.3rem;
+}
+.username {
+  font-family: inherit;
+  font-size: 1.6rem;
+  color: var(--BLACK);
+  font-weight: bold;
+}
+.date {
+  font-family: inherit;
+  font-size: 0.93rem;
+  color: var(--LIGHT_GRAY);
+}
+.user {
+  font-family: inherit;
+  font-size: 1rem;
+  color: var(--BLUE);
+  margin-top: 0.3rem;
+}
+.bio {
+  font-family: inherit;
+  font-size: 1rem;
+  color: var(--GRAY);
+  margin-top: 1.25rem;
+}
+.user_details {
+  width: 480px;
+  background-color: var(--VERY_LIGHT_BLUE);
+  padding-left: 2rem;
+  padding-right: 5.1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border: 1px solid brown;
+}
