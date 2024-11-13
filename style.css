@@ -17,6 +17,7 @@
   --PURPLE: #141d2f;
   --DEEP_BLUE: #1e2a47;
   --LIGHT_WHITE: #fefefe;
+  --RED: #f74646;
 }
 
 /* GENERAL STYLES */
@@ -32,7 +33,6 @@ body {
 }
 
 main {
-  border: 1px solid red;
   width: 730px;
 }
 .title {
@@ -49,18 +49,13 @@ main {
   color: var(--LIGHT_GRAY);
 }
 .theme {
-  border: 1px solid red;
   display: flex;
   gap: 1rem;
   align-items: center;
 }
 .intro {
-  border: 1px solid blue;
   display: flex;
   justify-content: space-between;
-}
-.searchbox {
-  border: 1px solid red;
 }
 input {
   width: 274px;
@@ -71,8 +66,17 @@ input {
   font-size: 1.12rem;
   outline: 0;
 }
+.styled::placeholder {
+  font-family: inherit;
+  font-size: 1.12rem;
+  color: var(--WHITE);
+}
+.mobile_styled::placeholder {
+  font-family: inherit;
+  font-size: 0.8rem;
+  color: var(--WHITE);
+}
 .search_input {
-  border: 1px solid red;
   display: flex;
   align-items: center;
   gap: 1.5rem;
@@ -86,6 +90,10 @@ input {
   padding: 0.8rem 1.4rem;
   border-radius: 10px;
 }
+.search_btn:hover {
+  background-color: #60abff;
+  cursor: pointer;
+}
 .searchbox {
   display: flex;
   padding-left: 2rem;
@@ -96,26 +104,36 @@ input {
   justify-content: space-between;
   border-radius: 15px;
   margin-top: 2.2rem;
+  cursor: pointer;
+}
+.mobile_searchbox {
+  display: none;
+}
+.moon:hover {
+  cursor: pointer;
+  color: var(--BLACK);
 }
 .card {
   width: 730px;
   padding: 3rem;
-  border: 1px solid black;
   margin-top: 1.5rem;
+  border-radius: 15px;
+  background-color: var(--LIGHT_WHITE);
+  display: none;
+}
+.mobile_card_details {
+  display: none;
 }
 .user_head {
-  border: 1px solid red;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .user_info {
-  border: 1px solid yellow;
   width: 100%;
 }
 .card_details {
-  border: 1px solid blue;
   display: flex;
-  align-items: center;
   gap: 2.3rem;
 }
 .username {
@@ -148,5 +166,322 @@ input {
   padding-right: 5.1rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  border: 1px solid brown;
+  margin-top: 2rem;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.repository {
+  font-family: inherit;
+  font-size: 0.9rem;
+  color: var(--GRAY);
+}
+.repository_quantity {
+  font-family: inherit;
+  font-size: 1.3rem;
+  color: var(--BLACK);
+  font-weight: bold;
+}
+.fans {
+  font-family: inherit;
+  font-size: 0.9rem;
+  color: var(--GRAY);
+}
+.no_of_followers {
+  font-family: inherit;
+  font-size: 1.3rem;
+  color: var(--BLACK);
+  font-weight: bold;
+}
+.following {
+  font-family: inherit;
+  font-size: 0.9rem;
+  color: var(--GRAY);
+}
+.no_of_following {
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: var(--BLACK);
+}
+.user_contact {
+  margin-top: 2.3rem;
+  padding-right: 3.1rem;
+  display: flex;
+  justify-content: space-between;
+}
+.location {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+.user_link {
+  display: flex;
+  align-items: center;
+  gap: 1.3rem;
+}
+.twitter {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.company {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.left_contact {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.right_contact {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.city,
+.link,
+.company_name,
+.twitter_profile {
+  font-family: inherit;
+  font-size: 1rem;
+  color: var(--GRAY);
+  cursor: pointer;
+}
+.city:hover {
+  text-decoration: underline;
+}
+.link:hover {
+  text-decoration: underline;
+}
+.company_name:hover {
+  text-decoration: underline;
+}
+.twitter_profile:hover {
+  text-decoration: underline;
+}
+.search {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.search_error {
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--RED);
+  display: none;
+}
+.avartar {
+  display: none;
+}
+
+@media (max-width: 428px) {
+  body {
+    display: block;
+    font-family: "Space Mono", monospace;
+  }
+  main {
+    width: 90%;
+    margin: auto;
+    margin-top: 2rem;
+  }
+  .searchbox {
+    display: none;
+  }
+  .mobile_searchbox {
+    display: block;
+    display: flex;
+    margin-top: 2.3rem;
+    padding-left: 1rem;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+    padding-right: 0.43rem;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .mobile_search_input {
+    display: flex;
+    align-items: center;
+    gap: 0.55rem;
+  }
+  .mobile_input {
+    font-family: inherit;
+    font-size: 0.8rem;
+    font-weight: 400;
+    width: 190px;
+    height: 25px;
+  }
+  .mobile_search {
+    display: flex;
+    align-items: center;
+  }
+  .mobile_search_btn {
+    background-color: var(--BLUE);
+    border: 0;
+    color: var(--WHITE);
+    font-family: inherit;
+    font-size: 0.8rem;
+    font-weight: 700;
+    border-radius: 10px;
+    padding: 0.7rem 1.1rem;
+  }
+  .mobile_search_error {
+    display: none;
+    font-family: inherit;
+    color: var(--RED);
+    font-weight: bold;
+    font-size: 1.2rem;
+    position: absolute;
+    top: 42%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 30%;
+    margin: auto;
+  }
+  .card {
+    margin-top: 1rem;
+    width: 100%;
+    padding: 2rem 1.5rem;
+  }
+  .card_details {
+    display: none;
+  }
+  .mobile_card_details {
+    display: block;
+  }
+  .mobile_avartar_section {
+    display: flex;
+    gap: 1.2rem;
+  }
+  .mobile_name {
+    color: var(--BLACK);
+    font-weight: 700;
+    font-size: 1rem;
+  }
+  .mobile_username {
+    color: var(--BLUE);
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 0.8rem;
+  }
+  .mobile_date {
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 0.8rem;
+    margin-top: 0.4rem;
+    color: var(--LIGHT_GRAY);
+  }
+  .mobile_bio {
+    margin-top: 2.06rem;
+  }
+  .bio_detail {
+    font-family: inherit;
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: 25px;
+  }
+  .mobile_user_details_wrapper {
+    padding: 1.1rem 0.9rem;
+    margin-top: 1.4rem;
+    background-color: var(--VERY_LIGHT_BLUE);
+    border-radius: 10px;
+  }
+  .mobile_user_details {
+    display: flex;
+    justify-content: space-between;
+  }
+  .mobile_repository {
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 0.8rem;
+    color: var(--GRAY);
+  }
+  .mobile_repos {
+    width: 79px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .mobile_followers {
+    width: 81px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .mobile_followings {
+    width: 89px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .mobile_fans {
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 0.8rem;
+    color: var(--GRAY);
+  }
+  .mobile_following {
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 0.8rem;
+    color: var(--GRAY);
+  }
+  .mobile_repository_quantity {
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--BLACK);
+  }
+  .mobile_no_of_followers {
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--BLACK);
+  }
+  .mobile_no_of_following {
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--BLACK);
+  }
+  .mobile_user_contact {
+    margin-top: 1.5rem;
+    width: 66%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .first_contact,
+  .second_contact,
+  .third_contact,
+  .fourth_contact {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+  }
+  .mobile_location,
+  .mobile_link,
+  .mobile_twitter_profile,
+  .mobile_company {
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 0.8rem;
+    color: var(--GRAY);
+  }
+  .mobile_avartar {
+    display: none;
+  }
+}
+
+@media (max-width: 375px) {
+  .mobile_search_error {
+    width: 35%;
+  }
 }
