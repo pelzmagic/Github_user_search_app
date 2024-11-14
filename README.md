@@ -26,12 +26,12 @@ Users should be able to:
 
 ### Screenshot
 
-![Screenshot of the app](./starter-code/assets/screenshot2.PNG)
-![Another view of the app](./starter-code/assets/screenshot.PNG)
+![Screenshot of the app](./assets/screenshot2.png)
+![Another view of the app](./assets/screenshot.png)
 
 ### Link
 
-- Live Site URL: [https://pelzmagic.github.io/Github_user_search_app/]
+- Live Site URL: [Add live site URL here](https://pelzmagic.github.io/Github_user_search_app/)
 
 ## My process
 
@@ -45,7 +45,7 @@ Users should be able to:
 
 ### Useful resources
 
-- [https://www.youtube.com/watch?v=7YeOjmpQUnU] - This video resource helped me in understanding how APIs work and how to integrate it.
+- [Example resource 1](https://https://www.youtube.com/watch?v=7YeOjmpQUnU) - This video resource helped me understand how an API works and how to integrate it.
 
 ## Author
 
