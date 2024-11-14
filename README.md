@@ -26,8 +26,8 @@ Users should be able to:
 
 ### Screenshot
 
-![Screenshot of the app](./assets/screenshot2.png)
-![Another view of the app](./assets/screenshot.png)
+![Screenshot of the app](https://github.com/pelzmagic/Github_user_search_app/blob/master/assets/screenshot2.PNG?raw=true)
+![Another view of the app](https://github.com/pelzmagic/Github_user_search_app/blob/master/assets/screenshot.PNG?raw=true)
 
 ### Link
 
