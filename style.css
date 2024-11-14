@@ -339,7 +339,7 @@ input {
     right: 0;
     bottom: 0;
     left: 0;
-    width: 30%;
+    width: 35%;
     margin: auto;
   }
   .card {
@@ -477,11 +477,5 @@ input {
   }
   .mobile_avartar {
     display: none;
-  }
-}
-
-@media (max-width: 375px) {
-  .mobile_search_error {
-    width: 35%;
   }
 }

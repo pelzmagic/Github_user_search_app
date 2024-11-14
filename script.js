@@ -101,6 +101,7 @@ mobileSearchButton.addEventListener("click", () => {
       if (!mobileResponse.ok) {
         throw new Error("Could not fetch response");
       }
+      mobileSearchError.style.display = "none";
       card.style.display = "block";
       const mobileData = await mobileResponse.json();
       console.log(mobileData);
@@ -122,6 +123,7 @@ mobileSearchButton.addEventListener("click", () => {
       mobileTwitterProfile.textContent = mobileData.twitter_username ?? "Not Available";
       mobileCompanyName.textContent = mobileData.company ?? "Not Available";
     } catch (error) {
+      card.style.display = "none";
       mobileSearchError.style.display = "block";
       console.error(error);
     }
