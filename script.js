@@ -141,6 +141,7 @@ moon.addEventListener("click", () => {
     card.style.backgroundColor = "var(--DEEP_BLUE)";
     searchbox.style.backgroundColor = "var(--DEEP_BLUE)";
     inputField.classList.add("styled");
+    inputField.style.color = "var(--WHITE)";
     mobileInputField.classList.add("mobile_styled");
     username.style.color = "var(--WHITE)";
     mobileName.style.color = "var(--WHITE)";
@@ -154,6 +155,7 @@ moon.addEventListener("click", () => {
     mobileRepo.style.color = "var(--WHITE)";
     noOfRepository.style.color = "var(--WHITE)";
     mobileRepoQuantity.style.color = "var(--WHITE)";
+    mobileInputField.style.color = "var(--WHITE)";
     followersCount.style.color = "var(--WHITE)";
     mobileFollowersCount.style.color = "var(--WHITE)";
     followers.style.color = "var(--WHITE)";
@@ -179,6 +181,7 @@ moon.addEventListener("click", () => {
     card.style.backgroundColor = "var(--LIGHT_WHITE)";
     searchbox.style.backgroundColor = "var(--LIGHT_WHITE)";
     inputField.classList.remove("styled");
+    inputField.style.color = "var(--BLACK)";
     mobileInputField.classList.remove("mobile_styled");
     username.style.color = "var(--BLACK)";
     mobileName.style.color = "var(--BLACK)";
@@ -188,6 +191,7 @@ moon.addEventListener("click", () => {
     mobileBio.style.color = "var(--GRAY)";
     userDetails.style.backgroundColor = "var(--VERY_LIGHT_BLUE)";
     mobileUserDetailsWrapper.style.backgroundColor = "var(--VERY_LIGHT_BLUE)";
+    mobileInputField.style.color = "var(--BLACK)";
     repository.style.color = "var(--GRAY)";
     mobileRepo.style.color = "var(--GRAY)";
     noOfRepository.style.color = "var(--BLACK)";
