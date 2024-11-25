@@ -65,6 +65,9 @@ input {
   font-family: inherit;
   font-size: 1.12rem;
   outline: 0;
+  border: 1px solid var(--DEEP_BLUE);
+  border-radius: 5px;
+  padding-left: 5px;
 }
 .styled::placeholder {
   font-family: inherit;
